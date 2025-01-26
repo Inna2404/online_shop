@@ -1,0 +1,40 @@
+.blog_section {
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+}
+.blog_section h3 {
+  text-align: start;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 150px;
+  font-size: 32px;
+}
+.blog_wrapper {
+  display: flex;
+  align-items: center;
+  margin: 30px 150px;
+  justify-content: center;
+}
+
+.blog_img {
+  /* background: url("../../img/blog_about_us.jpg") no-repeat; */
+  background-size: contain;
+  height: 800px;
+  width: 1500px;
+  border: 1px solid #a8a8a8;
+  box-shadow: 3px 2px 5px 1px #a8a8a8;
+}
+.blog_title {
+  padding-bottom: 30px;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.blog_text {
+  padding-left: 40px;
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+}
+.blog_uperrcase {
+  text-transform: uppercase;
+}
