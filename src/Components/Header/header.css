@@ -22,10 +22,10 @@
   font-size: 45px;
 }
 .nav li {
-  padding: 5px 15px;
+  padding: 5px 25px;
 }
 .nav_item a {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 800;
   color: #000;
 }
@@ -34,6 +34,7 @@
 }
 .search {
   border-radius: 40px;
+  cursor: pointer;
 
   border: #33333365 solid 1px;
   /* margin: -7px; */
@@ -44,11 +45,23 @@
   text-align: center;
 }
 
-.search div {
-  height: 18px;
-  margin: -2px 0px 0px 15px;
-  color: #000;
+.search input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
 }
+.material-symbols-outlined {
+  height: 18px;
+  margin: -4px 0px 0px 15px;
+  color: #000;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* .search div { */
+/* } */
 
 .favorite div {
   background: url("../../img/favorite_icon.svg") no-repeat;

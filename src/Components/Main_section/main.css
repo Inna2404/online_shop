@@ -40,6 +40,7 @@
   font-style: italic;
   font-size: 16px;
   color: #2e2e2ebb;
+  margin-bottom: 35px;
 }
 .main_btn {
   background-color: #066bc9;
@@ -47,7 +48,6 @@
   font-size: 15px;
   padding: 8px 20px;
   border-radius: 30px;
-  margin: 20px 0;
   border: #066bc9;
 
   cursor: pointer;

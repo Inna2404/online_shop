@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { products } from "../data/product";
-import "../modal_section/modal.css";
+import "./modal.css";
 const Modal = () => {
   const { id } = useParams();
   const product = products.find((item) => item.id === parseInt(id));
@@ -86,6 +86,28 @@ const Modal = () => {
           <div className="btns_active">
             <button>reviews</button>
             <div className="btns-line"></div>
+            <form>
+              <h2>Add review</h2>
+
+              <p>Your rating</p>
+              <div>
+                <p>Your feedback</p>
+                <textarea
+                  type="text"
+                  className="feetback"
+                  // maxLength={150}
+                ></textarea>
+              </div>
+              <div>
+                <p>Name</p>
+                <input type="text" required></input>
+              </div>
+              <div>
+                <p>Email</p>
+                <input type="email" required></input>
+              </div>
+              <button></button>
+            </form>
           </div>
           <div className="btns_active">
             <button>question</button>

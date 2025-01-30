@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./category_list.css";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { products } from "../data/product.jsx";
 
 const CategoryList = () => {
@@ -8,10 +8,7 @@ const CategoryList = () => {
   const [showWomenLinks, setShowWomenLinks] = useState(false);
   const [filter, setFilter] = useState("all");
 
-  // const [selectedProduct, setSelectedProduct] = useState(null);
-
   const location = useLocation();
-  const { category } = useParams();
 
   useEffect(() => {
     if (location.pathname === "/letest") {
@@ -19,8 +16,9 @@ const CategoryList = () => {
     }
   }, [location]);
 
-  const filteredProducts =
-    filter === "all"
+  const filteredProducts = location.state?.filteredProduct
+    ? location.state.filteredProduct
+    : filter === "all"
       ? products
       : filter === "letest"
         ? products.filter((product) => product.name === "letest")
@@ -43,7 +41,7 @@ const CategoryList = () => {
               Men
             </a>
             {showMenLinks && (
-              <ul>
+              <ul className="category_list_men">
                 <li>
                   <a href="#" onClick={() => setFilter("Men-tshirt")}>
                     t-shirt
@@ -100,7 +98,7 @@ const CategoryList = () => {
               Women
             </a>
             {showWomenLinks && (
-              <ul>
+              <ul className="category_list_women">
                 <li>
                   <a href="#" onClick={() => setFilter("Women-tshirt")}>
                     t-shirt
@@ -156,7 +154,6 @@ const CategoryList = () => {
           </li>
         </ul>
       </div>
-      {/* <h1>{category}</h1> */}
       <div className="cards">
         {filteredProducts.map((product) => (
           <Link

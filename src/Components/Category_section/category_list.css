@@ -1,3 +1,14 @@
+.category_list_wrapper {
+  font-family: "Times New Roman", Times, serif;
+}
+.category_lit_list li a {
+  color: #000;
+  font-size: 28px;
+}
+.category_list_men,
+.category_list_women {
+  padding: 40px 0;
+}
 .cards {
   padding: 40px 80px 40px 256px;
   display: grid;
@@ -15,12 +26,14 @@
 }
 
 .card_text {
+  color: #000;
   margin: 20px;
 }
 .card_text h4 {
   margin: 0;
   font-size: 18px;
-  font-weight: 400;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 .card_text h5 {
   margin: 0;

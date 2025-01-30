@@ -13,7 +13,9 @@ const Main = () => {
             Collection
           </h1>
           <p className="main_text">Best Cloth Collection By 2024!</p>
-          <button className="main_btn">Shop Now</button>
+          <a href="/categoryList" className="main_btn">
+            Shop Now
+          </a>
         </div>
       </main>
     </section>
